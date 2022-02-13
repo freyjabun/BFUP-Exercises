@@ -13,3 +13,10 @@ let rec removeOddIdx =
     | n -> n
 
 //Exercise 2.3
+let rec combinePair =
+    function
+    | []           -> []
+    | x :: y :: xs -> (x,y) :: combinePair xs
+    | _            -> []
+
+//Exercise 2.4
