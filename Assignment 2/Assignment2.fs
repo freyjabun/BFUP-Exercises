@@ -39,4 +39,41 @@ let (|/|) (x:complex) ((a:float),(b:float)) =
     x |*| (a/den,(-b)/den)
 
 //Exercise 2.5
-let explode1 s:string = s.ToCharArray()
+let explode1 (s:string) = s.ToCharArray() |> List.ofArray
+
+let rec explode2 =
+    function
+    | "" -> []
+    | s -> s[0] :: explode2 (s.Remove(0,1))
+
+//Exercise 2.6
+let implode (cs:char list) = List.foldBack (fun c acc -> string c + acc) cs ""
+
+let implodeRev (cs:char list) = List.fold (fun acc c -> string c + acc) "" cs
+
+//Exercise 2.7
+//Piping
+let toUpperPipe s = s |> explode1 |> List.map System.Char.ToUpper |> implode
+
+//Function composition
+let toUpper = explode1 >> List.map System.Char.ToUpper >> implode
+
+//Exercise 2.8
+let rec ack =
+    function
+    | (n,m) when m = 0 -> n+1
+    | (n,m) when m > 0 && n = 0 -> ack(m-1,1)
+    | (n,m) when m > 0 && n > 0 -> ack(m-1,ack(m,n-1))
+    | _ -> raise DotnetGG
+
+//Exercise 2.9
+let time f =
+    let start = System.DateTime.Now
+    let res = f ()
+    let finish = System.DateTime.Now
+    (res, finish - start)
+
+let timeArg1 f a = time (fun () -> f a)
+
+//Exercise 2.10
+let downto3 x y z = 
