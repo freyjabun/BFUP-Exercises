@@ -32,10 +32,10 @@ let (|-|) (x:complex) (y:complex) = x |+| (-(fst y), -(snd y))
 //Division
 exception DotnetGG
 let (|/|) (x:complex) ((a:float),(b:float)) =
-    if a = 0 || b = 0 then
+    if a = 0.0 || b = 0.0 then
        raise DotnetGG
     else
-    let den = a**2 + b**2
+    let den = a**2.0 + b**2.0
     x |*| (a/den,(-b)/den)
 
 //Exercise 2.5
@@ -44,7 +44,7 @@ let explode1 (s:string) = s.ToCharArray() |> List.ofArray
 let rec explode2 =
     function
     | "" -> []
-    | s -> s[0] :: explode2 (s.Remove(0,1))
+    | s -> s.[0] :: explode2 (s.Remove(0,1))
 
 //Exercise 2.6
 let implode (cs:char list) = List.foldBack (fun c acc -> string c + acc) cs ""
@@ -74,6 +74,3 @@ let time f =
     (res, finish - start)
 
 let timeArg1 f a = time (fun () -> f a)
-
-//Exercise 2.10
-let downto3 x y z = 
