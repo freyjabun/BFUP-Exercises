@@ -52,5 +52,29 @@ let arithTripleWordScore = N 3 .*. V "_acc_";;
 
 let rec arithEval a (w:word) s =
     match a with 
-    | PV a -> arithEval a w s |> snd w.[]
+    | N x -> x
+    | V x -> Map.tryFind x s |> Option.defaultValue 0
     | WL -> w.Length
+    | Add (x,y) ->
+        let vx = arithEval x w s 
+        let vy = arithEval y w s
+        vx + vy
+    | Sub (x,y) ->
+        let vx = arithEval x w s 
+        let vy = arithEval y w s
+        vx - vy
+    | Mul (x,y) ->
+        let vx = arithEval x w s 
+        let vy = arithEval y w s
+        vx * vy
+    | PV a -> snd w.[arithEval a w s]
+
+//Exercise 3.4
+type cExp =
+| C of char (* Character value *)
+| ToUpper of cExp (* Converts lower case to upper case character,
+non-letters are unchanged *)
+| ToLower of cExp (* Converts upper case to lower case character,
+non-letters are unchanged *)
+| CV of aExp (* Character lookup at word index *)
+
