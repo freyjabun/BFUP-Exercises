@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "TfatIlg/mRKN1MZu7Od+toaNVUsN6grY5xPczD0hwvQ34/gUoG9ChrwQLnGrc6Ly1kW6gdQDFlM0iVA5MivfDQ==",
+  "dgSpecHash": "mXSoT6Aat57WmX0qsgkLoWqNYn+MS1Ad539XT00LsuDRj8RL2t7dZYXKCfYgHQtZ3clB2OGLW4NqGyT1mLwbog==",
   "success": true,
-  "projectFilePath": "c:\\Users\\kweil\\Desktop\\ITU\\4th Sem\\BFUP\\Assigment 3\\Assigment 3.fsproj",
+  "projectFilePath": "e:\\School\\4th Sem\\BFUP\\BFUP-Exercises\\Assigment 3\\Assigment 3.fsproj",
   "expectedPackageFiles": [
-    "C:\\Users\\kweil\\.nuget\\packages\\fsharp.core\\6.0.1\\fsharp.core.6.0.1.nupkg.sha512"
+    "C:\\Users\\Freyja\\.nuget\\packages\\fsharp.core\\6.0.1\\fsharp.core.6.0.1.nupkg.sha512"
   ],
   "logs": []
 }

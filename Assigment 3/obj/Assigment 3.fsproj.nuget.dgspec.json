@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\kweil\\Desktop\\ITU\\4th Sem\\BFUP\\Assigment 3\\Assigment 3.fsproj": {}
+    "e:\\School\\4th Sem\\BFUP\\BFUP-Exercises\\Assigment 3\\Assigment 3.fsproj": {}
   },
   "projects": {
-    "c:\\Users\\kweil\\Desktop\\ITU\\4th Sem\\BFUP\\Assigment 3\\Assigment 3.fsproj": {
+    "e:\\School\\4th Sem\\BFUP\\BFUP-Exercises\\Assigment 3\\Assigment 3.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\kweil\\Desktop\\ITU\\4th Sem\\BFUP\\Assigment 3\\Assigment 3.fsproj",
+        "projectUniqueName": "e:\\School\\4th Sem\\BFUP\\BFUP-Exercises\\Assigment 3\\Assigment 3.fsproj",
         "projectName": "Assigment 3",
-        "projectPath": "c:\\Users\\kweil\\Desktop\\ITU\\4th Sem\\BFUP\\Assigment 3\\Assigment 3.fsproj",
-        "packagesPath": "C:\\Users\\kweil\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\kweil\\Desktop\\ITU\\4th Sem\\BFUP\\Assigment 3\\obj\\",
+        "projectPath": "e:\\School\\4th Sem\\BFUP\\BFUP-Exercises\\Assigment 3\\Assigment 3.fsproj",
+        "packagesPath": "C:\\Users\\Freyja\\.nuget\\packages\\",
+        "outputPath": "e:\\School\\4th Sem\\BFUP\\BFUP-Exercises\\Assigment 3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kweil\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Freyja\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
