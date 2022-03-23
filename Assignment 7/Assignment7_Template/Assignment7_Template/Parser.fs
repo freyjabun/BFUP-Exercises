@@ -68,6 +68,8 @@
 
     let VarParse = pid |>> V <?> "V"
 
+    
+
     let AddParse = binop (pchar '+') ProdParse TermParse |>> Add <?> "Add"
     do tref := choice [SubParse; AddParse; ProdParse]
 

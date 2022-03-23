@@ -7,5 +7,6 @@ obj
 bin
 /build/
 *.exe
+*.pdf
 !.paket/paket.bootstrapper.exe
 .ionide/
