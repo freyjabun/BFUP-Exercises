@@ -10,3 +10,4 @@ bin
 *.pdf
 !.paket/paket.bootstrapper.exe
 .ionide/
+.fake
